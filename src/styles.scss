@@ -1,1 +1,328 @@
-/* You can add global styles to this file, and also import other style files */
+$black15: rgba(0, 0, 0, 0.15);
+$black30: rgba(0, 0, 0, 0.3);
+$black45: rgba(0, 0, 0, 0.45);
+$black60: rgba(0, 0, 0, 0.6);
+$black75: rgba(0, 0, 0, 0.75);
+$black90: rgba(0, 0, 0, 0.9);
+$black100: #000000;
+
+$white15: rgba(255, 255, 255, 0.15);
+$white30: rgba(255, 255, 255, 0.3);
+$white45: rgba(255, 255, 255, 0.45);
+$white60: rgba(255, 255, 255, 0.6);
+$white75: rgba(255, 255, 255, 0.75);
+$white90: rgba(255, 255, 255, 0.9);
+$white100: #ffffff;
+
+$gray40: #fbfbfb;
+$gray50: #f9f9f9;
+$gray80: #f5f5f5;
+$gray100: #efeff0;
+$gray200: #e7e7e8;
+$gray300: #d6d6d8;
+$gray400: #bfc0c2;
+$gray500: #a2a3a7;
+$gray600: #828488;
+$gray700: #606367;
+$gray800: #404346;
+$gray900: #222426;
+
+$red40: #fff8f9;
+$red50: #ffe8e9;
+$red100: #ffcecf;
+$red200: #feb2b5;
+$red300: #fd9297;
+$red400: #fc747b;
+$red500: #fa5760;
+$red600: #f23a45;
+$red700: #e3202d;
+$red800: #c50f1d;
+$red900: #990814;
+
+$blue50: #c4f5ff;
+$blue80: #98ebfe;
+$blue100: #6ce0fc;
+$blue200: #43d2f9;
+$blue300: #21c4f4;
+$blue400: #04b5ee;
+$blue500: #01a5e5;
+$blue600: #0296d9;
+$blue700: #0586cb;
+$blue800: #0977bb;
+$blue900: #0e69ab;
+
+$green50: #f2fffb;
+$green100: #e9fcf6;
+$green200: #d2f6ea;
+$green300: #adecd8;
+$green400: #7ddfc0;
+$green500: #4ccca4;
+$green600: #26b489;
+$green700: #0f9572;
+$green800: #04725a;
+$green900: #014d41;
+
+$yellow50: #fff5c5;
+$yellow80: #ffeb98;
+$yellow100: #ffde6c;
+$yellow200: #ffd044;
+$yellow300: #ffc021;
+$yellow400: #ffb003;
+$yellow500: #fea300;
+$yellow600: #fd9800;
+$yellow700: #fc8c00;
+$yellow800: #fb8204;
+$yellow900: #fa7a0b;
+
+$peach50: #ffe9d6;
+$peach80: #ffdfc7;
+$peach100: #ffd4b8;
+$peach200: #ffc8a9;
+$peach300: #ffbb9a;
+$peach400: #ffad8b;
+$peach500: #ff9e7c;
+$peach600: #fc8e68;
+$peach700: #f97f55;
+$peach800: #f57043;
+$peach900: #f26130;
+
+$font-size-tiny: 0.75rem;
+$font-size-small: 0.875rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.125rem;
+$font-size-huge: 1.25rem;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  outline: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  font-size: 1rem;
+  color: $gray900;
+  font-family: 'system-ui', 'Open Sans', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+}
+
+body {
+  line-height: 1.4;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 1.5em 0 0.833em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+h1,
+.h1 {
+  font-size: 4.375rem;
+}
+h2,
+.h2 {
+  font-size: 3.125rem;
+}
+h3,
+.h3 {
+  font-size: 1.875rem;
+}
+h4,
+.h4 {
+  font-size: 1.625rem;
+}
+h5,
+.h5 {
+  font-size: 1.5rem;
+}
+h6,
+.h6 {
+  font-size: 1.375rem;
+}
+p {
+  margin: 1em 0;
+}
+small {
+  font-size: $font-size-tiny;
+}
+em,
+i {
+  font-style: italic;
+}
+strong,
+b {
+  font-weight: bold;
+}
+strong {
+  color: $blue500;
+}
+code,
+pre {
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  outline: none;
+}
+
+input {
+  font-family: 'system-ui', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+}
+
+.svg {
+  width: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+:root {
+  background-color: $gray40;
+}

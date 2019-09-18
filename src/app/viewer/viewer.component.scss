@@ -1,0 +1,16 @@
+button {
+  padding: 3px 10px;
+  margin: 0 10px;
+  display: block;
+  color: black;
+  background-color: #efefef;
+  border: 1px solid #787878;
+  border-radius: 3px;
+  :hover {
+    background-color: #cdcdcd;
+  }
+}
+
+img {
+  margin: 10px;
+}
