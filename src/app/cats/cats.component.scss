@@ -3,6 +3,9 @@ div.list {
 }
 
 img {
-  width: 33vw;
+  width: calc(((100vw - 20px) / 3) - 10px);
+  height: 300px;
+  object-fit: cover;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
