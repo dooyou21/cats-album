@@ -1,17 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import Cat from '../class/cat';
+import { CatService } from '../cat.service';
+
 @Component({
   selector: 'app-cats',
   templateUrl: './cats.component.html',
   styleUrls: ['./cats.component.scss'],
 })
 export class CatsComponent implements OnInit {
-  cat: Cat = {
-    id: 'MTgyMTg3Mw',
-    url: 'https://cdn2.thecatapi.com/images/MTgyMTg3Mw.jpg',
-  };
+  cats: Cat[] = [];
 
-  constructor() {}
+  constructor(private catService: CatService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.getCats();
+  }
+
+  getCats(): void {
+    this.catService.getCats().subscribe(cats => (this.cats = cats));
+  }
 }
